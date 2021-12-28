@@ -120,7 +120,7 @@ $router->addRoute(
     \tweeterapp\auth\TweeterAuthentification::ACCESS_LEVEL_NONE
 );
 
-AbstractView::addStyleSheet("/html/style.css");
+AbstractView::addStyleSheet("html/style.css");
 AbstractView::setAppTitle("Tweeter");
 
 $router->setDefaultRoute('/home/');
