@@ -10,6 +10,8 @@ class HttpRequest extends AbstractHttpRequest
         if (isset($_SERVER["PATH_INFO"]))
             $this->path_info = $_SERVER["PATH_INFO"];
         $this->root = dirname($_SERVER["SCRIPT_NAME"]);
+        if ($this->root === "/")
+            $this->root = "";
         $this->method = $_SERVER["REQUEST_METHOD"];
         $this->get = $_GET;
         $this->post = $_POST;

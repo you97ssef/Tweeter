@@ -18,7 +18,7 @@ $pass = $keys["pass"];
 
 $config = [
     'driver'    => 'sqlite',
-    'database'  => __DIR__ . "\\$base",
+    'database'  => __DIR__ . "/$base",
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => ''
