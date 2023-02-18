@@ -18,7 +18,7 @@ $pass = $keys["pass"];
 
 $config = [
     'driver'    => 'sqlite',
-    'database'  => __DIR__ . "\\$base",
+    'database'  => __DIR__ . "/$base",
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => ''
@@ -120,7 +120,7 @@ $router->addRoute(
     \tweeterapp\auth\TweeterAuthentification::ACCESS_LEVEL_NONE
 );
 
-AbstractView::addStyleSheet("/html/style.css");
+AbstractView::addStyleSheet("html/style.css");
 AbstractView::setAppTitle("Tweeter");
 
 $router->setDefaultRoute('/home/');
